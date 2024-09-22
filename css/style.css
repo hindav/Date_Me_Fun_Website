@@ -3,31 +3,51 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+
   background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
-  font-family: "Nunito", sans-serif;
 }
 
-/* Ensure the container scales on small screens */
-.container {
-  text-align: center;
-  padding: 20px;
+#noButton {
+  position: absolute;
+  margin-left: 150px;
+  transition: 0.5s;
+  margin-top: 30px;
 }
 
-/* Responsive header text */
+#yesButton {
+  position: absolute;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+
 .header_text {
-  font-size: 40px;
+  font-family: "Nunito";
+  font-size: 50px;
   font-weight: bold;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #ffffff;
-  margin: 20px 0;
 }
 
-/* Style for buttons */
+.text {
+  font-family: "Nunito";
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
 .buttons {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
-  position: relative;
+  margin-left: 20px;
 }
 
 .btn {
@@ -35,8 +55,10 @@ body {
   color: white;
   font-weight: 600;
   padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
   font-size: 16px;
-  margin: 10px;
+  margin: 4px 2px;
   cursor: pointer;
   border: none;
   border-radius: 12px;
@@ -49,83 +71,18 @@ body {
   color: #017cff;
 }
 
-/* Positioning for the "No" button to move around */
-#noButton {
-  position: absolute;
-  transition: 0.5s;
-}
-
-#yesButton {
-  position: static;
-}
-
-/* Responsive Instagram link */
-p {
-  color: white;
-  margin: 20px 0;
-}
-
-p a {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-p a:hover {
-  opacity: 1;
-}
-
-/* GIF container centering */
 .gif_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
 }
-
-/* Media Queries for Responsiveness */
-
-/* For small devices (up to 600px) */
-@media only screen and (max-width: 600px) {
-  body {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .header_text {
-    font-size: 32px;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 14px;
-    margin: 5px;
-  }
-
-  #yesButton, #noButton {
-    position: static;
-    margin: 10px 0;
-  }
-
-  p a {
-    font-size: 16px;
-  }
+p {
+  color: white;
+  margin-left: 50%;
 }
-
-/* For tablets (601px to 1024px) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .header_text {
-    font-size: 36px;
-  }
-
-  .btn {
-    padding: 12px 28px;
-    font-size: 15px;
-  }
-
-  p a {
-    font-size: 18px;
-  }
+p a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.25;
 }
