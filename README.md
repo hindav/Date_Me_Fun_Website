@@ -1,6 +1,7 @@
-# date-me
-https://hindav.github.io/Date_Me_Fun_Website/
- a fun project for entertairment purpose
+# Date-Me
+https://hindav.github.io/Date_Me_Fun_Website/ 
+ 
+A fun project for entertairment purpose
 
 
 
